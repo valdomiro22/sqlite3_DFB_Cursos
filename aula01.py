@@ -58,4 +58,3 @@ def mostrar(item):
 
 
 mostrar('tb_contatos')
-mostrar('tb_contatos2')
