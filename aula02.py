@@ -15,14 +15,14 @@ def conexao_banco():
 
 vcom = conexao_banco()
 
-nome = input('Digite o nome: ')
-telefone = input("Digite o telefone: ")
-email = input("Digite o email: ")
+# nome = input('Digite o nome: ')
+# telefone = input("Digite o telefone: ")
+# email = input("Digite o email: ")
 
-comando_sql = f"""INSERT INTO tb_contatos 
-                (nome_contato, telefone_contato, email_contato)
-                VALUES ('{nome}', '{telefone}', '{email}')
-                ;"""
+# comando_sql = f"""INSERT INTO tb_contatos
+#                 (nome_contato, telefone_contato, email_contato)
+#                 VALUES ('{nome}', '{telefone}', '{email}')
+#                 ;"""
 
 
 def cria_cursor(conect):
@@ -38,17 +38,17 @@ def cria_cursor(conect):
 cursor = cria_cursor(conexao_banco())
 
 
-def inserir(co, comand):
-    try:
-        c = co.cursor()
-        c.execute(comand)
-        print('Dados inseridos')
-        co.commit()
-    except Error as ex:
-        print(ex, '---Dados não inseridos')
+# def inserir(co, comand):
+#     try:
+#         c = co.cursor()
+#         c.execute(comand)
+#         print('Dados inseridos')
+#         co.commit()
+#     except Error as ex:
+#         print(ex, '---Dados não inseridos')
 
 
-inserir(vcom, comando_sql)
+# inserir(vcom, comando_sql)
 # vcom.commit()
 
 
