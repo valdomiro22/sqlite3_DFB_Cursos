@@ -35,7 +35,7 @@ def mostrar(cur):
     return cosult
 
 
-consulta = mostrar('tb_contatos')
+consulta = mostrar('bicicleta')
 
 for i in consulta:
     print(i)
